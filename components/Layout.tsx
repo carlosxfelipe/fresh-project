@@ -1,5 +1,5 @@
 import { ComponentChildren } from "preact";
-import Navbar from "./Navbar.tsx";
+import Navbar from "../islands/Navbar.tsx";
 
 export default function Layout({ children }: { children: ComponentChildren }) {
   return (
