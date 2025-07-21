@@ -1,4 +1,10 @@
 import Layout from "../components/Layout.tsx";
+import Counter from "../islands/Counter.tsx";
+import ToggleSwitch from "../islands/ToggleSwitch.tsx";
+import { signal } from "@preact/signals";
+
+const count = signal(0);
+const isOn = signal(false);
 
 export default function Home() {
   return (
@@ -9,6 +15,9 @@ export default function Home() {
           Try updating this message in the
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
+
+        <Counter count={count} />
+        <ToggleSwitch on={isOn} />
       </div>
     </Layout>
   );

@@ -10,6 +10,7 @@ import * as $contact from "./routes/contact.tsx";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $ToggleSwitch from "./islands/ToggleSwitch.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,6 +25,7 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/ToggleSwitch.tsx": $ToggleSwitch,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
