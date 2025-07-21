@@ -1,13 +1,13 @@
 import Layout from "../components/Layout.tsx";
 
-export default function Home() {
+export default function About() {
   return (
     <Layout>
       <div class="max-w-screen-md mx-auto flex flex-col px-4 text-left">
-        <h1 class="text-4xl font-bold mb-4">Welcome to Fresh</h1>
+        <h1 class="text-4xl font-bold mb-4">About Us</h1>
         <p class="mb-6">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
+          This is the About page of your Fresh app. You can add more information
+          here.
         </p>
       </div>
     </Layout>
