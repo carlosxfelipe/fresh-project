@@ -1,4 +1,3 @@
-// islands/ToggleSwitch.tsx
 import { Signal } from "@preact/signals";
 import { Button } from "../components/Button.tsx";
 
