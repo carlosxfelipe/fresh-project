@@ -1,16 +1,25 @@
-# Fresh project
+# Projeto Fresh
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+Seu novo projeto Fresh está pronto para uso. Você pode seguir o guia "Primeiros
+Passos" do Fresh aqui: https://fresh.deno.dev/docs/getting-started
 
-### Usage
+### Uso
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+Certifique-se de instalar o Deno:
+https://deno.land/manual/getting_started/installation
 
-Then start the project:
+Em seguida, inicie o projeto com:
 
 ```
 deno task start
 ```
 
-This will watch the project directory and restart as necessary.
+Isso irá observar o diretório do projeto e reiniciar conforme necessário.
+
+### Recursos incluídos no template
+
+Este template já vem com algumas funcionalidades úteis pré-configuradas:
+
+- Suporte a temas claro e escuro (light/dark mode)
+- Navbar responsiva com menu hambúrguer em telas menores
+- Footer com links e tema dinâmico
