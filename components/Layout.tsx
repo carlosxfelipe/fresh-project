@@ -2,11 +2,20 @@ import { ComponentChildren } from "preact";
 import Navbar from "../islands/Navbar.tsx";
 import Footer from "./Footer.tsx";
 
-export default function Layout({ children }: { children: ComponentChildren }) {
+interface LayoutProps {
+  children: ComponentChildren;
+  fluid?: boolean;
+}
+
+export default function Layout({ children, fluid = false }: LayoutProps) {
+  const mainClass = `px-4 py-12 flex-grow ${
+    fluid ? "w-full" : "max-w-screen-lg mx-auto"
+  }`;
+
   return (
     <>
       <Navbar />
-      <main class="px-4 py-12 mx-auto flex-grow">
+      <main class={mainClass}>
         {children}
       </main>
       <Footer />

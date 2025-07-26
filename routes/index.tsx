@@ -9,7 +9,7 @@ const isOn = signal(false);
 export default function Home() {
   return (
     <Layout>
-      <div class="max-w-screen-md mx-auto flex flex-col px-4 text-left">
+      <div class="flex flex-col px-4 text-left">
         <h1 class="text-4xl font-bold mb-4">Welcome to Fresh</h1>
         <p class="mb-6">
           Try updating this message in the

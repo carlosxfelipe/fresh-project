@@ -13,7 +13,7 @@ export const handler: Handlers = {
 export default function About({ data }: PageProps<{ joke: string }>) {
   return (
     <Layout>
-      <div class="max-w-screen-md mx-auto flex flex-col px-4 text-left">
+      <div class="flex flex-col px-4 text-left">
         <h1 class="text-4xl font-bold mb-4">About Us</h1>
         <p class="mb-6">
           This is the About page of your Fresh app. You can add more information
