@@ -11,3 +11,9 @@ html {
     @apply bg-gray-900 text-white;
   }
 }
+
+/* a {
+  @apply hover:text-blue-600 dark:hover:text-blue-400;
+  text-decoration: none;
+} */
+
