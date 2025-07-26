@@ -1,14 +1,15 @@
 import { ComponentChildren } from "preact";
 import Navbar from "../islands/Navbar.tsx";
+import Footer from "./Footer.tsx";
 
 export default function Layout({ children }: { children: ComponentChildren }) {
   return (
     <>
       <Navbar />
-      <main class="px-4 py-12 mx-auto">
+      <main class="px-4 py-12 mx-auto flex-grow">
         {children}
       </main>
-      {/* Futuro Footer */}
+      <Footer />
     </>
   );
 }
