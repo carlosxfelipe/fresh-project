@@ -4,7 +4,7 @@ export default function Navbar() {
   const isOpen = useSignal(false);
 
   return (
-    <nav class="w-full bg-[#86efac] p-4">
+    <nav class="w-full bg-[#86efac] dark:bg-gray-800 text-black dark:text-white p-4 shadow">
       <div class="flex items-center justify-between px-4">
         {/* Logo + Título */}
         <div class="flex items-center space-x-2">
@@ -12,7 +12,7 @@ export default function Navbar() {
           <span class="font-bold text-lg">My Fresh App</span>
         </div>
 
-        {/* Botão hamburguer visível apenas em telas pequenas */}
+        {/* Botão hamburguer */}
         <button
           type="button"
           class="md:hidden"
@@ -34,20 +34,50 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Links horizontais para md+ */}
+        {/* Links horizontais */}
         <div class="hidden md:flex space-x-4">
-          <a href="/" class="underline">Home</a>
-          <a href="/about" class="underline">About</a>
-          <a href="/contact" class="underline">Contact</a>
+          <a
+            href="/"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            About
+          </a>
+          <a
+            href="/contact"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            Contact
+          </a>
         </div>
       </div>
 
-      {/* Menu dropdown visível apenas quando aberto em telas pequenas */}
+      {/* Dropdown */}
       {isOpen.value && (
         <div class="flex flex-col mt-2 space-y-2 md:hidden px-4">
-          <a href="/" class="underline">Home</a>
-          <a href="/about" class="underline">About</a>
-          <a href="/contact" class="underline">Contact</a>
+          <a
+            href="/"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            About
+          </a>
+          <a
+            href="/contact"
+            class="underline hover:text-blue-600 dark:hover:text-blue-400"
+          >
+            Contact
+          </a>
         </div>
       )}
     </nav>
