@@ -14,14 +14,16 @@ export default function About({ data }: PageProps<{ joke: string }>) {
   return (
     <Layout>
       <div class="flex flex-col px-4 text-left">
-        <h1 class="text-4xl font-bold mb-4">About Us</h1>
+        <h1 class="text-4xl font-bold mb-4">Sobre Nós</h1>
         <p class="mb-6">
-          This is the About page of your Fresh app. You can add more information
-          here.
+          Esta é a página "Sobre" do seu site feito com Fresh. Você pode
+          adicionar mais informações aqui.
         </p>
 
-        <div class="mt-8 p-4 border-l-4 border-blue-500 bg-blue-50 text-blue-900 italic rounded">
-          💡 Fun fact for devs:
+        <div class="mt-4 p-4 border-l-4 italic rounded
+         border-green-500 bg-green-100 text-green-900
+         dark:border-lime-400 dark:bg-lime-950 dark:text-lime-100">
+          💡 Curiosidade para devs:
           <br />
           {data.joke}
         </div>

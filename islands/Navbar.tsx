@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Logo + Título */}
         <div class="flex items-center space-x-2">
           <img src="/logo.svg" width="32" height="32" alt="Fresh logo" />
-          <span class="font-bold text-lg">My Fresh App</span>
+          <span class="font-bold text-lg">Meu Site Fresh</span>
         </div>
 
         {/* Botão hamburguer */}
@@ -38,18 +38,18 @@ export default function Navbar() {
 
         {/* Links horizontais */}
         <div class="hidden md:flex space-x-4">
-          <a href="/" class={linkClass}>Home</a>
-          <a href="/about" class={linkClass}>About</a>
-          <a href="/contact" class={linkClass}>Contact</a>
+          <a href="/" class={linkClass}>Início</a>
+          <a href="/about" class={linkClass}>Sobre</a>
+          <a href="/contact" class={linkClass}>Contato</a>
         </div>
       </div>
 
       {/* Dropdown */}
       {isOpen.value && (
         <div class="flex flex-col mt-2 space-y-2 md:hidden px-4">
-          <a href="/" class={linkClass}>Home</a>
-          <a href="/about" class={linkClass}>About</a>
-          <a href="/contact" class={linkClass}>Contact</a>
+          <a href="/" class={linkClass}>Início</a>
+          <a href="/about" class={linkClass}>Sobre</a>
+          <a href="/contact" class={linkClass}>Contato</a>
         </div>
       )}
     </nav>
